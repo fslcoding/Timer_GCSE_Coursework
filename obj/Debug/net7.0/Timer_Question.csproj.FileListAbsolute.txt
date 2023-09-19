@@ -1,0 +1,15 @@
+C:\Users\elliot alderson\Documents\GitHub\Timer_GCSE_Coursework\Timer_Question\bin\Debug\net7.0\Timer_Question.exe
+C:\Users\elliot alderson\Documents\GitHub\Timer_GCSE_Coursework\Timer_Question\bin\Debug\net7.0\Timer_Question.deps.json
+C:\Users\elliot alderson\Documents\GitHub\Timer_GCSE_Coursework\Timer_Question\bin\Debug\net7.0\Timer_Question.runtimeconfig.json
+C:\Users\elliot alderson\Documents\GitHub\Timer_GCSE_Coursework\Timer_Question\bin\Debug\net7.0\Timer_Question.dll
+C:\Users\elliot alderson\Documents\GitHub\Timer_GCSE_Coursework\Timer_Question\bin\Debug\net7.0\Timer_Question.pdb
+C:\Users\elliot alderson\Documents\GitHub\Timer_GCSE_Coursework\Timer_Question\obj\Debug\net7.0\Timer_Question.csproj.AssemblyReference.cache
+C:\Users\elliot alderson\Documents\GitHub\Timer_GCSE_Coursework\Timer_Question\obj\Debug\net7.0\Timer_Question.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\elliot alderson\Documents\GitHub\Timer_GCSE_Coursework\Timer_Question\obj\Debug\net7.0\Timer_Question.AssemblyInfoInputs.cache
+C:\Users\elliot alderson\Documents\GitHub\Timer_GCSE_Coursework\Timer_Question\obj\Debug\net7.0\Timer_Question.AssemblyInfo.cs
+C:\Users\elliot alderson\Documents\GitHub\Timer_GCSE_Coursework\Timer_Question\obj\Debug\net7.0\Timer_Question.csproj.CoreCompileInputs.cache
+C:\Users\elliot alderson\Documents\GitHub\Timer_GCSE_Coursework\Timer_Question\obj\Debug\net7.0\Timer_Question.dll
+C:\Users\elliot alderson\Documents\GitHub\Timer_GCSE_Coursework\Timer_Question\obj\Debug\net7.0\refint\Timer_Question.dll
+C:\Users\elliot alderson\Documents\GitHub\Timer_GCSE_Coursework\Timer_Question\obj\Debug\net7.0\Timer_Question.pdb
+C:\Users\elliot alderson\Documents\GitHub\Timer_GCSE_Coursework\Timer_Question\obj\Debug\net7.0\Timer_Question.genruntimeconfig.cache
+C:\Users\elliot alderson\Documents\GitHub\Timer_GCSE_Coursework\Timer_Question\obj\Debug\net7.0\ref\Timer_Question.dll
