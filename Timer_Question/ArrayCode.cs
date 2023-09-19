@@ -1,16 +1,20 @@
-﻿using System.Timers;
+﻿
+using System.Timers;
 
 namespace Timer_Question;
 
-public class SimpleCode
+public class ArrayCode
 {
     static int CountDown = 60; // Seconds
-    static List<char> TypedCharacters = new();
+
+    static char[] TypedCharacters = new char[100];
+    static int CharacterCount = 0;
+
     static bool AnsweredPrompt = false;
     static ConsoleKeyInfo CurrentKey;
 
 
-    static void Run()
+    static void Main()
     {
         StartTimer();
 
@@ -26,11 +30,15 @@ public class SimpleCode
                 break; // Exit loop 
             }
 
+            if(CharacterCount < TypedCharacters.Length)
+            {
+                TypedCharacters[CharacterCount] = CurrentKey.KeyChar;
+                CharacterCount++;
+            }
+
+            // Show all the characters typed so far
             Console.SetCursorPosition(0, 2);
-            TypedCharacters.Add(CurrentKey.KeyChar);
-            
-            // Print all characters
-            for(int i = 0; i < TypedCharacters.Count; i++)
+            for(int i = 0; i < CharacterCount; i++)
             {
                 Console.Write(TypedCharacters[i]);
             }
@@ -40,7 +48,7 @@ public class SimpleCode
 
         string FinalAnswer = "";
 
-        for(int i = 0; i < TypedCharacters.Count;i++)
+        for(int i = 0; i < CharacterCount;i++)
         {
             FinalAnswer = FinalAnswer + TypedCharacters[i];
         }
