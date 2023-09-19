@@ -5,37 +5,34 @@ namespace Timer_Question;
 public class SimpleCode
 {
     static int CountDown = 60; // Seconds
-    static List<char> AllCharacters = new();
-    static bool HasAnsweredPrompt = false;
-    static ConsoleKeyInfo CurrentCharacter;
+    static List<char> TypedCharacters = new();
+    static bool AnsweredPrompt = false;
+    static ConsoleKeyInfo CurrentKey;
 
 
     static void Run()
     {
-        System.Timers.Timer timer = new(1000); // Update every second
-
-        timer.Elapsed += UpdateTimer;
-        timer.Enabled = true; // Start the clock!
+        StartTimer();
 
         Console.WriteLine("What is Heisenberg's real name?"); 
 
-        while(!HasAnsweredPrompt)
+        while(!AnsweredPrompt)
         {
-            CurrentCharacter = Console.ReadKey(true);
+            CurrentKey = Console.ReadKey(true);
 
-            if(CurrentCharacter.Key == ConsoleKey.Enter)
+            if(CurrentKey.Key == ConsoleKey.Enter)
             {
-                HasAnsweredPrompt = true;
+                AnsweredPrompt = true;
                 break; // Exit loop 
             }
 
             Console.SetCursorPosition(0, 2);
-            AllCharacters.Add(CurrentCharacter.KeyChar);
+            TypedCharacters.Add(CurrentKey.KeyChar);
             
             // Print all characters
-            for(int i = 0; i < AllCharacters.Count; i++)
+            for(int i = 0; i < TypedCharacters.Count; i++)
             {
-                Console.WriteLine(AllCharacters[i]);
+                Console.Write(TypedCharacters[i]);
             }
 
         }
@@ -43,9 +40,9 @@ public class SimpleCode
 
         string FinalAnswer = "";
 
-        for(int i = 0; i < AllCharacters.Count;i++)
+        for(int i = 0; i < TypedCharacters.Count;i++)
         {
-            FinalAnswer = FinalAnswer + AllCharacters[i];
+            FinalAnswer = FinalAnswer + TypedCharacters[i];
         }
 
         Console.Clear();
@@ -54,11 +51,23 @@ public class SimpleCode
     }
 
 
+    static void StartTimer() {
+        System.Timers.Timer timer = new System.Timers.Timer(1000);
+        timer.Elapsed += UpdateTimer;
+        timer.Enabled = true;
+    }
+
+
 
     static void UpdateTimer(object source, ElapsedEventArgs e)
     {
-        if (HasAnsweredPrompt) return;
-        if (CountDown-- <= 0) return; // Put code for running out of time here 
+        if (AnsweredPrompt) return;
+        if (CountDown-- <= 0)
+        {
+            // Put code for running out of time here
+            AnsweredPrompt = true; // This stops the loop from continuing
+            return;
+        }
 
         Console.SetCursorPosition(0, 1);
         Console.WriteLine(CountDown + " Seconds Left!");

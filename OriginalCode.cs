@@ -1,8 +1,9 @@
-﻿using System.Timers;
+﻿using System.Threading.Channels;
+using System.Timers;
 
 namespace Timer_Question;
 
-public class OriginalCode
+public class Question
 {
     private static int CountDown = 60; // Seconds
     private static List<char> chars = new();
