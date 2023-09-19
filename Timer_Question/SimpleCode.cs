@@ -55,10 +55,15 @@ public class SimpleCode
 
 
 
-    static void UpdateTimer()
+    static void UpdateTimer(object source, ElapsedEventArgs e)
     {
         if (HasAnsweredPrompt) return;
-        if (CountDown-- <= 0) return; // Put code for running out of time here 
+        if (CountDown-- <= 0)
+        {
+            // Put code for running out of time here
+            HasAnsweredPrompt = true; // This stops the loop from continuing
+            return;
+        }
 
         Console.SetCursorPosition(0, 1);
         Console.WriteLine(CountDown + " Seconds Left!");
