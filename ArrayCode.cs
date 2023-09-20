@@ -60,14 +60,11 @@ public class ArrayCode
 
     }
 
-
     static void StartTimer() {
         System.Timers.Timer timer = new System.Timers.Timer(1000);
         timer.Elapsed += UpdateTimer;
         timer.Enabled = true;
     }
-
-
 
     static void UpdateTimer(object source, ElapsedEventArgs e)
     {
@@ -83,9 +80,4 @@ public class ArrayCode
         Console.WriteLine(CountDown + " Seconds Left!");
         Console.SetCursorPosition(CharacterCount, 2);
     }
-
-
-
-
-
 }

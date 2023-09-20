@@ -3,7 +3,7 @@ using System.Timers;
 
 namespace Timer_Question;
 
-public class Question
+public class OriginalCode
 {
     private static int CountDown = 60; // Seconds
     private static List<char> chars = new();
