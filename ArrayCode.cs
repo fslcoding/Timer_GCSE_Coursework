@@ -14,8 +14,10 @@ public class ArrayCode
     static ConsoleKeyInfo CurrentKey;
 
 
-    static void Main()
+    public static void Main(string[] args)
     {
+        Console.Clear();
+
         StartTimer();
 
         Console.WriteLine("What is Heisenberg's real name?"); 
@@ -79,6 +81,7 @@ public class ArrayCode
 
         Console.SetCursorPosition(0, 1);
         Console.WriteLine(CountDown + " Seconds Left!");
+        Console.SetCursorPosition(CharacterCount, 2);
     }
 
 

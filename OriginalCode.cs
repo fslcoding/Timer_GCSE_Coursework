@@ -11,7 +11,7 @@ public class Question
 
     private static ConsoleKeyInfo currentChar;
 
-    public static void Main(string[] args)
+    public static void Run(string[] args)
     {
         System.Timers.Timer timer = new(1000);
 
