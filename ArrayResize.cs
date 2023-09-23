@@ -13,7 +13,7 @@ public class ArrayResize
     static ConsoleKeyInfo CurrentKey;
 
 
-    public static void Main(string[] args)
+    public static void Run(string[] args)
     {
         Console.Clear();
 
@@ -34,7 +34,7 @@ public class ArrayResize
             if(CharacterCount < TypedCharacters.Length)
             {
                 TypedCharacters[CharacterCount] = CurrentKey.KeyChar;
-                ResizeArray();
+                // ResizeArray();
                 CharacterCount++;
             }
 
