@@ -12,7 +12,12 @@ public class ArrayCode
     static bool AnsweredPrompt = false;
     static ConsoleKeyInfo CurrentKey;
 
+<<<<<<< Updated upstream
     public static void Main(string[] args)
+=======
+
+    public static void Run(string[] args)
+>>>>>>> Stashed changes
     {
         StartTimer();
         Console.Clear();
